@@ -16,14 +16,18 @@
   /* End reset */
 
   #masthead,
-  #content,
-  #footer {
+  #govuk-email-content,
+  #govuk-email-footer {
     max-width: 580px;
   }
 
-  #header {
+  #govuk-email-header {
     width: 100%;
     background-color: #0B0C0C;
+  }
+
+  #content {
+    margin-bottom: 50px;
   }
 
   td {
@@ -100,7 +104,7 @@
   }
 
   .actions, .unsubscribe, .actions a, .unsubscribe a {
-    color: #6F777B !important;
+    color: #0B0C0C !important;
   }
 
   ol.actions, ul.actions {
@@ -124,22 +128,22 @@
   Bring inline: Yes. */
   p {margin: 15px 0;}
 
-  /* Hotmail header color reset
+  /* Hotmail govuk-email-header color reset
   Bring inline: Yes. */
   h1, h2, h3, h4, h5, h6 {color: #0B0C0C !important;}
 
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .actions li a {color: #005EA5 !important;}
 
   h1 a:hover, h2 a:hover,  h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .actions li a:hover {
-    color: #2E8ACA !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    color: #2E8ACA !important; /* Preferably not the same color as the normal govuk-email-header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
   }
 
   h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active, .actions li a:active {
-    color: #2E8ACA !important; /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    color: #2E8ACA !important; /* Preferably not the same color as the normal govuk-email-header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
   }
 
   h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, .actions li a:visited {
-    color: #005EA5 !important; /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+    color: #005EA5 !important; /* Preferably not the same color as the normal govuk-email-header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
   }
 
   /* Outlook 07, 10 Padding issue fix
@@ -230,7 +234,7 @@
 </head>
 <body>
 
-  <table id="header">
+  <table id="govuk-email-header">
     <tr>
       <td>
 
@@ -246,7 +250,7 @@
     </tr>
   </table>
 
-  <table id="content">
+  <table id="govuk-email-content">
     <tr>
       <td>
         <h1>Alerts and recalls for drugs and medical devices</h1>
@@ -262,18 +266,17 @@
           </tr>
         </table>
 
-        <p>Enquiries about the content of this email should be sent to: <a href="mailto:email.support@mhra.gsi.gov.uk">email.support@mhra.gsi.gov.uk</a>.</p>
+        <p>This is an automatically generated email, enquiries should be sent to: <a href="mailto:email.support@mhra.gsi.gov.uk">email.support@mhra.gsi.gov.uk</a>.</p>
       </td>
     </tr>
   </table>
 
-  <table id="footer">
+  <table id="govuk-email-footer">
     <tr>
       <td>
         <ul class="actions">
-          <li><a href="#">Unsubscribe from these emails</a></li>
-          <li><a href="#">Manage your GOV.UK email preferences</a></li>
-          <li><a href="#">Change your password or email address</a></li>
+          <li><a href="[LINK TO GOVDELIVERY SUBSCRIBER PREFS]">Manage your GOV.UK email preferences including unsubscribing</a></li>
+          <li>Provided by <a href="https://gov.uk">GOV.UK</a></li>
         </ul>
       </td>
     </tr>
