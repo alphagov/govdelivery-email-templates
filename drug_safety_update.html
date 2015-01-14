@@ -77,6 +77,10 @@
     line-height: 1.315789474;
   }
 
+  h2 {
+    padding-top:25px;
+  }
+
   .issue {
     color: #6f777b;
     margin-bottom:30px;
@@ -230,15 +234,9 @@
     <tr>
       <td>
         <h1>MHRA – Drug Safety Update</h1>
-        <p class="date"><strong>January 2015</strong></p>
+        <p class="date"><strong>{% container Month-and-year: 'Month and year' %}</strong></p>
 
-        <h2>Boceprevir (Victrelis) and telaprevir (Incivo): baseline predictive factors for sepsis, worsening liver function, and mortality</h2>
-        <p>Boceprevir and telaprevir are not recommended for patients who have a low platelet count or hypoalbuminaemia before starting either of these medicines. Boceprevir is also not recommended for patients who have coagulopathy before starting it.</p>
-        <p class="finder-link"><a href="#">Find out more</a></p>
-
-        <h2>Boceprevir (Victrelis) and telaprevir (Incivo): baseline predictive factors for sepsis, worsening liver function, and mortality</h2>
-        <p>Boceprevir and telaprevir are not recommended for patients who have a low platelet count or hypoalbuminaemia before starting either of these medicines. Boceprevir is also not recommended for patients who have coagulopathy before starting it.</p>
-        <p class="finder-link"><a href="#">Find out more</a></p>
+        {% container email-body: 'Email body' %}
 
         <table class="separator">
           <tr>
