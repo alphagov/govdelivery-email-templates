@@ -48,6 +48,7 @@
     height: 1px;
     line-height:1px;
     font-size:1px;
+    margin-top: 55px;
   }
 
   table.separator td {
@@ -78,7 +79,7 @@
   }
 
   h2 {
-    padding-top:25px;
+    padding-top:35px;
   }
 
   .issue {
@@ -234,10 +235,8 @@
     <tr>
       <td>
         <h1>MHRA – Drug Safety Update</h1>
-        <p class="date"><strong>{% container Month-and-year: 'Month and year' %}</strong></p>
-
+        {% container Month-and-year: 'Month and year' %}
         {% container email-body: 'Email body' %}
-
         <table class="separator">
           <tr>
             <td><!-- --></td>
