@@ -57,3 +57,8 @@ Once you're happy with the changes, raise a pull request against this repo.
 
 After your pull request has been reviewed and merged, make the template changes
 in the GovDelivery production account.
+
+## TODO
+
+- Add the Whitehall header image and footer code into this repository
+- Add information and templates for Foreign Travel Advice emails
